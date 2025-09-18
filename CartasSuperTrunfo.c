@@ -11,6 +11,8 @@ int main(){
 
     float divisao;
 
+    float divisaoPIB;
+
     printf("digite seu estado: ");
     scanf("%s", estado);
 
@@ -34,6 +36,8 @@ int main(){
     
     divisao = populaçao / area; 
 
+    divisaoPIB = PIB / (float)populaçao;
+
     printf("\n--- SUA CIDADE ---\n");
     printf("Estado: %s\n", estado);
     printf("Codigo: %s\n", codigo);
@@ -43,6 +47,7 @@ int main(){
     printf("PIB: %.2f\n", PIB);
     printf("Turismo: %d pontos\n", turismo);
     printf("Densidade Populacional: %.2f\n", divisao);
+    printf("PIB per Capita: %.6f\n", divisaoPIB);
 
     printf("----------\n\n");
 
@@ -81,6 +86,8 @@ int main(){
 
     divisao = populaçao2 / area2; 
 
+    divisaoPIB = PIB2 / (float)populaçao2;
+
     printf("\n--- SUA SEGUNDA CIDADE ---\n");
     printf("Estado: %s\n", estado2);
     printf("Codigo: %s\n", codigo2);
@@ -90,6 +97,9 @@ int main(){
     printf("PIB: %.2f\n", PIB2);
     printf("Turismo: %d pontos\n", turismo2);
     printf("Densidade Populacional: %.2f\n", divisao);
+    printf("PIB per Capita: %.6f\n", divisaoPIB);
+
+    printf("----------\n\n");
 
 return 0; 
 }
