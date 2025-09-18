@@ -9,6 +9,8 @@ int main(){
     float PIB;
     int turismo;
 
+    float divisao;
+
     printf("digite seu estado: ");
     scanf("%s", estado);
 
@@ -29,6 +31,8 @@ int main(){
 
     printf("digite o turismo: ");
     scanf("%d", &turismo);
+    
+    divisao = populaçao / area; 
 
     printf("\n--- SUA CIDADE ---\n");
     printf("Estado: %s\n", estado);
@@ -38,11 +42,14 @@ int main(){
     printf("Area: %.2f km²\n", area);
     printf("PIB: %.2f\n", PIB);
     printf("Turismo: %d pontos\n", turismo);
+    printf("Densidade Populacional: %.2f\n", divisao);
 
     printf("----------\n\n");
 
     ////////////////////////////////////////////////////////////////
+//eu tinha esquecido que eram duas cartas, perdão!
 
+// adicionei a segunda e um pulo entre as linhas <3
      char estado2[20];
     char codigo2[5];
     char nome2[50];
@@ -72,6 +79,8 @@ int main(){
     printf("digite o turismo: ");
     scanf("%d", &turismo2);
 
+    divisao = populaçao2 / area2; 
+
     printf("\n--- SUA SEGUNDA CIDADE ---\n");
     printf("Estado: %s\n", estado2);
     printf("Codigo: %s\n", codigo2);
@@ -80,6 +89,7 @@ int main(){
     printf("Area: %.2f km²\n", area2);
     printf("PIB: %.2f\n", PIB2);
     printf("Turismo: %d pontos\n", turismo2);
+    printf("Densidade Populacional: %.2f\n", divisao);
 
 return 0; 
 }
