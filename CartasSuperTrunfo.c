@@ -107,5 +107,5 @@ int main(){
        
     printf("\n --- COMPARAÇÃO ENTRE AS CARTAS --- \n\n") 
 
-return 0;
+return 0
 }
